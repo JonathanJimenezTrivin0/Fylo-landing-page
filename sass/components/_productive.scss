@@ -1,0 +1,118 @@
+.productive {
+  display: flex;
+  justify-content: space-between;
+  background-color: $Light-Grayish-Blue;
+  padding-bottom: 100px;
+
+  &__title {
+    font-size: 37px;
+    font-weight: 700;
+    padding-bottom: 40px;
+
+    letter-spacing: 1.3px;
+    font-family: $font-family-Raleway;
+  }
+  &__description {
+    width: 520px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-family: $font-family-Raleway;
+    color: $Very-Dark-Blue;
+  }
+  &__description-two {
+    @extend .productive__description;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__btn {
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    gap: 8px;
+    color: $Moderate-Cyan;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    font-family: $font-family-Raleway;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .productive {
+    flex-direction: column-reverse;
+    &__title {
+      padding-top: 100px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+    }
+    &__description {
+      width: auto;
+    }
+    &__btn {
+      margin: auto;
+    }
+    .card__img-illustration2 {
+      width: auto;
+    }
+    .card {
+      width: auto;
+      height: auto;
+      &__description {
+        font-size: 9.2px;
+      }
+    }
+    .avatar {
+      font-size: 8px;
+    }
+  }
+}
+
+.card {
+  padding: 20px 40px 28px 31px;
+  width: 355px;
+  height: 215px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 97px -33px rgba(191, 191, 191, 0.66);
+  -webkit-box-shadow: 0px 0px 97px -33px rgba(191, 191, 191, 0.66);
+  -moz-box-shadow: 0px 0px 97px -33px rgba(191, 191, 191, 0.66);
+  &__description {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: $font-family-Raleway;
+    color: $Very-Dark-Blue;
+  }
+  &__avatar {
+    display: flex;
+  }
+  &__img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+  }
+}
+.avatar {
+  padding-left: 8px;
+  font-size: 10px;
+  gap: 5px;
+  color: $Very-Dark-Blue;
+  font-family: $font-family-Raleway;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  &__name {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+.card__img-illustration2 {
+  width: 536px;
+}

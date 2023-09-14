@@ -1,0 +1,98 @@
+.footer {
+  max-width: 1440px;
+  padding-bottom: 80px;
+  font-family: $font-family-Raleway;
+  background-color: $Very-Dark-Blue;
+  color: $Light-Grayish-Blue;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    padding-top: 100px;
+    width: 136px;
+  }
+  .phone {
+    gap: 15px;
+    padding-top: 20px;
+    display: flex;
+    font-family: $font-family-Raleway;
+  }
+  .email {
+    @extend .phone;
+  }
+  .about {
+    padding-top: 160px;
+    display: flex;
+    gap: 200px;
+    &__ul {
+      line-height: 35px;
+    }
+    &__link {
+      color: $Light-Grayish-Blue;
+      transition: color 400ms $cubic;
+      &:hover {
+        color: $Bright-Blue;
+      }
+    }
+  }
+  .socialMedia {
+    padding-top: 160px;
+    padding-right: 150px;
+    display: flex;
+    gap: 10px;
+
+    &__circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid $Light-Grayish-Blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border 400ms $cubic;
+
+      &:hover {
+        border: 1px solid $Bright-Blue;
+        .socialMedia__svg {
+          fill: $Bright-Blue;
+        }
+      }
+      .socialMedia__svg {
+        fill: $Light-Grayish-Blue;
+        transition: fill 400ms $cubic;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    max-width: 375px;
+    flex-direction: column;
+    &__logo {
+      padding-top: 60px;
+    }
+    .about {
+      padding-top: 30px;
+      gap: 30px;
+      flex-direction: column;
+    }
+    .socialMedia {
+      justify-content: center;
+      padding-right: 0;
+      padding-top: 40px;
+    }
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  font-family: $font-family-Raleway;
+}
+.attribution a {
+  color: $Bright-Blue;
+}

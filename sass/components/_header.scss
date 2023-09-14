@@ -1,0 +1,243 @@
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 230px;
+  background: {
+    image: url(/images/bg-curve-desktop.svg);
+    repeat: no-repeat;
+    position: bottom;
+  }
+  &__img {
+    width: 630px;
+    height: 460px;
+  }
+  &__section {
+    padding-top: 90px;
+  }
+  &__title {
+    font-size: 40px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    color: $Very-Dark-Blue;
+    font-family: $font-family-Raleway;
+  }
+  &__description {
+    width: 570px;
+    height: 66px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: $Very-Dark-Blue;
+    font-family: $font-family-Raleway;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding-bottom: 160px;
+    flex-direction: column;
+    background-image: url(/images/bg-curve-mobile.svg);
+    &__img {
+      height: auto;
+    }
+    &__title {
+      width: auto;
+      font-size: 21px;
+      text-align: center;
+    }
+    &__description {
+      font-size: 13px;
+      text-align: center;
+      width: auto;
+    }
+    .form {
+      &__input {
+        max-width: 270px;
+        margin-bottom: 20px;
+      }
+      &__btn {
+        min-width: 270px;
+      }
+    }
+  }
+}
+
+.form {
+  &__input {
+    border-radius: 5px;
+    width: 319px;
+    height: 45px;
+    padding-left: 20px;
+    margin-right: 10px;
+    border: none;
+    font-family: $font-family-Raleway;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  &__btn {
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    background-color: $Bright-Blue;
+    color: $Light-Grayish-Blue;
+    font-family: $font-family-Raleway;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition: background-color 400ms $cubic;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $Bright-Blue-alfa;
+    }
+  }
+  ::placeholder {
+    color: $Light-Gray;
+    letter-spacing: 1.2px;
+  }
+}
+
+.bubbles {
+  max-width: 1440px;
+}
+
+.bubble {
+  max-width: 1440px;
+  border-radius: 50%;
+  background: linear-gradient(
+    30deg,
+    $Light-Grayish-Blue,
+    $Light-Grayish-Blue-alfa
+  );
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  animation: bubbles 3s linear infinite;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  &:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 9%;
+    animation-duration: 3.5s;
+    animation-delay: 1;
+  }
+  &:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 15%;
+    animation-duration: 3.5s;
+    animation-delay: 1;
+  }
+  &:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    left: 35%;
+    animation-duration: 4.5s;
+    animation-delay: 2;
+  }
+  &:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    left: 45%;
+    animation-duration: 5.5s;
+    animation-delay: 3;
+  }
+  &:nth-child(4) {
+    width: 59px;
+    height: 59px;
+    left: 55%;
+    animation-duration: 3s;
+    animation-delay: 1;
+  }
+  &:nth-child(5) {
+    width: 20px;
+    height: 20px;
+    left: 65%;
+    animation-duration: 4.5s;
+    animation-delay: 2;
+  }
+  &:nth-child(6) {
+    width: 35px;
+    height: 35px;
+    left: 75%;
+    animation-duration: 5.5s;
+    animation-delay: 3;
+  }
+  &:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 90%;
+    animation-duration: 6.5s;
+    animation-delay: 1;
+  }
+  &:nth-child(8) {
+    width: 120px;
+    height: 120px;
+    left: 10%;
+    animation-duration: 3.5;
+    animation-delay: 2;
+  }
+  &:nth-child(9) {
+    width: 45px;
+    height: 45px;
+    left: 25%;
+    animation-duration: 2.5s;
+    animation-delay: 3;
+  }
+  &:nth-child(10) {
+    width: 200px;
+    height: 200px;
+    left: 39%;
+    animation-duration: 6.5s;
+    animation-delay: 1;
+  }
+  &:nth-child(11) {
+    width: 110px;
+    height: 110px;
+    left: 69%;
+    animation-duration: 4s;
+    animation-delay: 2;
+  }
+  &:nth-child(12) {
+    width: 58px;
+    height: 58px;
+    left: 79%;
+    animation-duration: 5.5s;
+    animation-delay: 3;
+  }
+  &:nth-child(13) {
+    width: 12px;
+    height: 12px;
+    left: 79%;
+    animation-duration: 5s;
+    animation-delay: 1;
+  }
+  &:nth-child(14) {
+    width: 17px;
+    height: 17px;
+    left: 5%;
+    animation-duration: 4.5s;
+    animation-delay: 2;
+  }
+}
+
+@keyframes bubbles {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  30% {
+    transform: translatex(0px);
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}

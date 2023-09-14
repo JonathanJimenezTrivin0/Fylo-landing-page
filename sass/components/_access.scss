@@ -1,0 +1,63 @@
+.access {
+  height: 320px;
+  color: $Light-Grayish-Blue;
+  background-color: $Desaturated-Blue;
+  display: flex;
+  &__text {
+    display: flex;
+    padding-right: 240px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 30px;
+    padding-bottom: 25px;
+    font-family: $font-family-Raleway;
+  }
+  &__description {
+    width: 516px;
+    font-size: 17px;
+    font-family: $font-family-Raleway;
+    line-height: 1.5em;
+  }
+  &__form {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__form-input {
+    @extend .form__input;
+    width: 480px;
+  }
+  &__form-btn {
+    @extend .form__btn;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .access {
+    flex-direction: column;
+    justify-content: space-evenly;
+    &__text {
+      padding-right: 0px;
+    }
+    &__title {
+      width: auto;
+      font-size: 20px;
+      text-align: center;
+    }
+    &__description {
+      font-size: 14.2px;
+      width: auto;
+      text-align: center;
+    }
+
+    &__form-input {
+      width: 100%;
+    }
+    &__form-btn {
+      width: 100%;
+    }
+  }
+}
