@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
   padding-bottom: 230px;
   background: {
-    image: url(/images/bg-curve-desktop.svg);
+    image: url(../images/bg-curve-desktop.svg);
     repeat: no-repeat;
     position: bottom;
   }
@@ -35,7 +35,7 @@
   .header {
     padding-bottom: 160px;
     flex-direction: column;
-    background-image: url(/images/bg-curve-mobile.svg);
+    background-image: url(../images/bg-curve-mobile.svg);
     &__img {
       height: auto;
     }

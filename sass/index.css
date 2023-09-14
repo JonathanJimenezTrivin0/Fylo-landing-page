@@ -123,7 +123,7 @@ a {
   display: flex;
   flex-direction: row-reverse;
   padding-bottom: 230px;
-  background-image: url(/images/bg-curve-desktop.svg);
+  background-image: url(../images/bg-curve-desktop.svg);
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -154,7 +154,7 @@ a {
   .header {
     padding-bottom: 160px;
     flex-direction: column;
-    background-image: url(/images/bg-curve-mobile.svg);
+    background-image: url(../images/bg-curve-mobile.svg);
   }
   .header__img {
     height: auto;
