@@ -349,10 +349,10 @@ a {
   }
 }
 .productive {
+  padding-bottom: 100px;
   display: flex;
   justify-content: space-between;
   background-color: hsl(240, 75%, 98%);
-  padding-bottom: 100px;
 }
 .productive__title {
   font-size: 37px;

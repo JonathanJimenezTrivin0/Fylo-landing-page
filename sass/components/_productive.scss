@@ -1,14 +1,12 @@
 .productive {
+  padding-bottom: 100px;
   display: flex;
   justify-content: space-between;
   background-color: $Light-Grayish-Blue;
-  padding-bottom: 100px;
-
   &__title {
     font-size: 37px;
     font-weight: 700;
     padding-bottom: 40px;
-
     letter-spacing: 1.3px;
     font-family: $font-family-Raleway;
   }
